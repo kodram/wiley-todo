@@ -1,0 +1,64 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .list {
+    width: 500px;
+    align-self: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-grow: 1;
+}
+
+.field {
+  flex-grow: 1;
+}
+
+.button {
+  margin-left: 8px;
+}
+
+.item {
+  display: flex;
+  padding: 8px 4px;
+}
+
+.item.completed {
+  text-decoration: line-through;
+}
+
+.item:hover {
+  background-color: AntiqueWhite;
+}
+
+.check,
+.edit,
+.remove {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit > svg {
+  fill: LightBlue;
+}
+
+.remove > svg {
+  fill: LightCoral;
+}
+
+.title {
+  flex-grow: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
